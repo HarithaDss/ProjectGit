@@ -8,7 +8,7 @@ function PersonDetails(name, age){
     this.age = age ;
 
     this.eat = function(){
-        console.log(this.name + " is eating food" );
+        console.log(`${this.name} is eating food`);
     }
 
 }

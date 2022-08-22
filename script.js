@@ -18,7 +18,7 @@ x == y; // this will return true or false boolean which can be used in if loops
 
 //0.4 Writing a function - similar to Java methods
 function show() {
-    /*
+    
     var x = 10;
     var y = 5;
 
@@ -55,10 +55,10 @@ function show() {
     }
 
     console.log("for let - After the for loop , j is now :- " + j);
-    */
+    
 
     //Creating object using Const
-   /* const personDetails = {
+    const personDetails = {
         name: "Haritha",
         age : 31,
         eat : function(){
@@ -75,7 +75,7 @@ function show() {
     personDetails.eat();
     //To access the property written for the object :
     console.log(personDetails.age);
-    */
+   
 
     //Printing only the properties using a for loop
     const personDetails2 = {
