@@ -8,21 +8,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dss Document</title>
 </head>
+
+
+
 <body>
     <!--THIS IS A COMMENT IN .HTML FILE-->
     <!--Defining an Element in the paragraph tag -->
 
-    <p> This is a P element </p>
+    <!--Defining an Anchor tag here to scroll to the last statement of the document-->
+    <a href="#p4" target="_blank">Link to navigate to the bottom of the page</a>
+    <p title = 'This is p element'> This is a P element </p>
     <p id = 'p1'>This is P1 element </p>
-    <p id = 'p2'></p>
+    <p id = 'p2' ></p>
+   
 
     <!--Defining a button-->
     <!--Creates 'Click this button' on the webpage and clicking on it will show an alert-->
     <!--<button type = "button" onclick = 'alert("Button clicked successfully")'> Click this button </button>-->
     <button type = "button" onclick = show()> Click this button </button>
     
+    <!--Defining an attribute key and value using img tag-->
+    <img title="Shikku" src = "C:\Users\DinHar\Downloads\PicsArt_07-12-03.30.55.jpg" height="200px" >
+
+    <!--HTML Headings-->>
+    <h1>This is h1 heading</h1>
+    <h2>This is h2 heading</h2>
+    <h3>This is h3 heading</h3>
+    <h4>This is h4 heading</h4>
+    <h5>This is h5 heading</h5>
+    <h6>This is h6 heading</h6>
+
+    <!--HTML paragraph-->
+    <p>This is a paragraph tag
+        This is paragraph tag line 2
+        This is paragraph tag line 3
+    </p>
+    <p>This is a statement in another P tag</p>
     
+    <pre>This is a pre tag check 
+        This is a pre tag check for line 2
+        This is pre tag line 3
+    </pre>
+
+    <!--Text Formatting-->
+    <p><b><i><u>This is a Formatted P statement</u></i></b></p>
+    <p>Samples<sup>This is a Formatted P statement</sup></p>
+    <p>Samples<sub>This is a Formatted P statement</sub></p>
+
+    <pre><strong>This is a pre tag check </strong>
+        <mark>This is a pre tag check for line 2 </mark>
+        <del>This is pre tag line 3</del>
+        <em>This is pre tag line 4</em>
+    </pre>
+
+    <!--Anchor tag will scroll to this element-->
+    <p id='p4'><pre>This is the Anchor tag referred text</pre></p>
+    <a href ="C:\Users\DinHar\Downloads\20220712_162004.jpg" target="_blank">This is Chikku image 2</a>
+    <br />
+    <a href ="secondWebPage.html" target="_blank">This is Chikku image 3</a>
+    <br />
  
+    <!--We can make image as hyperlink-->
+    <a href="secondWebpage.html">
+        <img src="Scenery.jpg" height="200px" title = "Scenery">
+    </a>
 
     <script src = "script.js"> </script>
 </body>

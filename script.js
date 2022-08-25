@@ -99,8 +99,8 @@ function show() {
 
 }
 
-//0.5 Refresh the webpage now to see this line added next to the button 
-document.write("This statement is printing content after the button!!");
+//0.5 Refresh the webpage now to see this line added next to the button  - Yes if page was reloading like in the case of button click - this command will over-write the content , else it will just write the content on the webpage - that is it will just add to the rest of the page content
+//document.write("This statement is printing content after the button!!");
 
 function addNum(num1, num2) {
     var num3 = num1 + num2;
