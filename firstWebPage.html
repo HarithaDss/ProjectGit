@@ -6,7 +6,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dss Document</title>
+    <title>Dss Document1</title>
+
+    <!--Internal Styling-->
+    <!--Inside the style tag we write the syntax as : .propertyName -->
+    <style>
+        .class1{
+            background-color:aquamarine;
+            color:chocolate;
+            text-align: right;
+            font-style: italic;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+
 </head>
 
 
@@ -39,13 +53,13 @@
     <h6>This is h6 heading</h6>
 
     <!--HTML paragraph-->
-    <p>This is a paragraph tag
+    <p class="class1">This is a paragraph tag
         This is paragraph tag line 2
         This is paragraph tag line 3
     </p>
     <p>This is a statement in another P tag</p>
     
-    <pre>This is a pre tag check 
+    <pre class="class1">This is a pre tag check 
         This is a pre tag check for line 2
         This is pre tag line 3
     </pre>
@@ -78,6 +92,7 @@
 </html>
 
 <!--div and span tags-->
+<!--Inline Styling-->
 <div style="background-color:pink ; color:brown">
 <h3>This is <span style="background-color:aqua;color:blue">DIV</span> tag content</h3>
 <p>Div tag content is being demoed here</p>
@@ -105,8 +120,9 @@
 </ol>
 
 <h5><--Description list ,Description term and Description definition--></h5>
-<dl>
+<dl class="class1">
 <dt>Eat <dd>-- eat well daily</dd></dt>
 <dt>Sleep <dd>-- Sleep for 8 hours</dd></dt>
 <dt>Work <dd>-- Work for 9 hours</dd></dt>
 </dl>
+
