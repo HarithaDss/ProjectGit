@@ -1,0 +1,57 @@
+/*
+External Styling - linked to formAssignment.html and firstWebPage.html files
+*/
+
+/*Type 1 selector - Element Styling*/
+body{
+
+    background-color:lightgoldenrodyellow;
+
+}
+
+
+/*Type 2 selector - ID styling
+*/
+#para1{
+color:darkorange;
+font-size:larger;
+font-family: 'Times New Roman', Times, serif;
+font-weight: bold;
+}
+
+#para2{
+    color:rgb(0, 13, 255);
+    font-size:larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    }
+
+    
+#para1, #para2{
+    color:rgb(255, 0, 93);
+    font-size:larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    }
+
+/*Type 3 selector - Class styling*/
+.paraClass1,.paraClass2{
+
+    background-color:lightgrey;
+}
+
+/*Styling for the <a> link*/
+/* unvisited link */ a:link {
+    color: red;
+    text-decoration: none;
+}
+/* visited link */ a:visited {
+ color: green;
+}
+/* mouse over link */ a:hover {
+ color: hotpink;
+}
+/* selected link */ a:active {
+ color: blue;
+}
+Example Example

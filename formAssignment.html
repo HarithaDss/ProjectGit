@@ -6,11 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Forms</title>
+    <!--External Styling-->
+    <link rel="stylesheet" type="text/css" href="htmlStyling.css">
+    <!--Internal Styling-->
+    <style>
+        #para1,
+        #para2 {
+            color:black;
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .paraClass1, .paraClass2{
+            font-style: italic;
+        }
+
+
+    </style>
 </head>
 
 <body>
     <!--Assignment 1 from 'HTML_Basics_Session2_4KitSolutions' pdf-->
-    <h2>Assignment I</h2>
+    <!--<h2>Assignment I</h2>-->
+    <p id="para1" class="paraClass1" style="font-style:normal">Assignment I</p>
     <form action="apply-now.php" method="post">
         <fieldset>
             <legend>Academic information</legend>
@@ -56,7 +76,8 @@
 
         <!--Assignment 2 from 'HTML_Basics_Session2_4KitSolutions' pdf - last slide -->
         <!--Let us divide the problem statement into 3 fieldsets-->
-        <h2>Assignment II</h2>
+        <!--<h2>Assignment II</h2>-->
+        <p id="para2" class="paraClass2">Assignment II</p>
         <fieldset>
             <legend>Personal Details</legend>
             <label for="fName">First Name </label><input type="text" name="fName" id="f1"><br>
@@ -92,7 +113,7 @@
                 <option value="KA">Karnataka</option>
             </select>
             <br>
-            <label for="pin">PinCode </label><input type="text" name="pin" id="p1"><br>
+            <label for="pin">PinCode </label><input type="text" name="pin" id="pin1"><br>
         </fieldset>
 
         <fieldset>
