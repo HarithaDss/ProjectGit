@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--All the code in the body tag of this file will be shown as it is on the Web Page/Document-->
+<!--All the code in the body tag of this file will be shown on the Web Page/Document-->
 
 <html lang="en">
 <head>
@@ -34,6 +34,9 @@
 
 
 <body>
+
+    <!--External Scripting-->
+    <script src = "script1.js"> </script>
     <!--THIS IS A COMMENT IN .HTML FILE-->
     <!--Defining an Element in the paragraph tag -->
 
@@ -47,12 +50,12 @@
     <!--Defining a button-->
     <!--Creates 'Click this button' on the webpage and clicking on it will show an alert-->
     <!--<button type = "button" onclick = 'alert("Button clicked successfully")'> Click this button </button>-->
-    <button type = "button" onclick = show()> Click this button </button>
+    <button type = "button" onclick = show()> Click this button </button><br>
     
     <!--Defining an attribute key and value using img tag-->
-    <img title="Shikku" src = "C:\Users\DinHar\Downloads\PicsArt_07-12-03.30.55.jpg" height="200px" >
+    <img title="Shikku" src = ./Images/PicsArt_07-12-03.16.50.jpg height="200px" id="image1" >
 
-    <!--HTML Headings-->>
+    <!--HTML Headings-->
     <h1>This is h1 heading</h1>
     <h2>This is h2 heading</h2>
     <h3>This is h3 heading</h3>
@@ -90,47 +93,49 @@
     <a href ="secondWebPage.html" target="_blank">This is Chikku image 3</a>
     <br />
  
-    <!--We can make image as hyperlink-->
+    <!--We can make image as hyperlink, we did not mention target here = so by default it will take _self-->
     <a href="secondWebpage.html">
-        <img src="Scenery.jpg" height="200px" title = "Scenery">
+        <img src="./Images/Scenery.jpg" height="200px" title = "Scenery">
     </a>
 
-    <script src = "script.js"> </script>
-</body>
-</html>
 
 <!--div and span tags-->
 <!--Inline Styling-->
 <div style="background-color:pink ; color:brown">
-<h3>This is <span style="background-color:aqua;color:blue">DIV</span> tag content</h3>
-<p>Div tag content is being demoed here</p>
-<p>It acts as a frame to put similar content together</p>
-</div>
-
-<!--HTML Lists-->
-<h5><--Unordered list and List items ;  Styling included--></h5>
-<ul style="list-style-type:circle ;">
-<li>Shopping</li>
-<li>Photoshoot</li>
-<li>Eating</li>
-</ul>
-
-<h5><--Ordered list and List items ; Nested List and including hyperlink--></h5>
-<ol type="I">
-<li>Eat</li>
-<li>Sleep</li>
-<li>Work</li>
-    <ol>
-        <li>office</li>
-        <li>Tution</li>
-        <a href="https://www.google.com" target="_blank"><li>Search for other options</li></a>
+    <h3>This is <span style="background-color:aqua;color:blue">DIV</span> tag content</h3>
+    <p>Div tag content is being demoed here</p>
+    <p>It acts as a frame to put similar content together</p>
+    </div>
+    
+    <!--HTML Lists-->
+    <h5><--Unordered list and List items ;  Styling included--></h5>
+    <ul style="list-style-type:circle ;">
+    <li>Shopping</li>
+    <li>Photoshoot</li>
+    <li>Eating</li>
+    </ul>
+    
+    <h5><--Ordered list and List items ; Nested List and including hyperlink--></h5>
+    <ol type="I">
+    <li>Eat</li>
+    <li>Sleep</li>
+    <li>Work</li>
+        <ol>
+            <li>office</li>
+            <li>Tution</li>
+            <a href="https://www.google.com" target="_blank"><li>Search for other options</li></a>
+        </ol>
     </ol>
-</ol>
+    
+  
+</body>
+</html>
+
 
 <h5><--Description list ,Description term and Description definition--></h5>
-<dl class="class1">
-<dt>Eat <dd>-- eat well daily</dd></dt>
-<dt>Sleep <dd>-- Sleep for 8 hours</dd></dt>
-<dt>Work <dd>-- Work for 9 hours</dd></dt>
-</dl>
+    <dl class="class1">
+    <dt>Eat <dd>-- eat well daily</dd></dt>
+    <dt>Sleep <dd>-- Sleep for 8 hours</dd></dt>
+    <dt>Work <dd>-- Work for 9 hours</dd></dt>
+    </dl>
 
