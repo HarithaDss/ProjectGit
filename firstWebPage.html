@@ -2,6 +2,7 @@
 <!--All the code in the body tag of this file will be shown on the Web Page/Document-->
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,9 +13,9 @@
     <!--Internal Styling-->
     <!--Inside the style tag we write the syntax as : .propertyName -->
     <style>
-        .class1{
-            background-color:aquamarine;
-            color:chocolate;
+        .class1 {
+            background-color: aquamarine;
+            color: chocolate;
             text-align: right;
             font-style: italic;
             font-weight: bold;
@@ -22,7 +23,9 @@
         }
 
         /*Combination of all the 3 primary CSS selectors*/
-        p , #p1 , .class1{
+        p,
+        #p1,
+        .class1 {
 
             background-color: lightpink;
             text-decoration: underline;
@@ -35,25 +38,24 @@
 
 <body>
 
-    <!--External Scripting-->
-    <script src = "script1.js"> </script>
+
     <!--THIS IS A COMMENT IN .HTML FILE-->
     <!--Defining an Element in the paragraph tag -->
 
     <!--Defining an Anchor tag here to scroll to the last statement of the document-->
     <a href="#p4" target="_blank">Link to navigate to the bottom of the page</a>
-    <p title = 'This is p element'> This is a P element </p>
-    <p id = 'p1'>This is P1 element </p>
-    <p id = 'p2' ></p>
-   
+    <p title='This is p element'> This is a P element </p>
+    <p id='p1'>This is P1 element </p>
+    <p id='p2'></p>
+
 
     <!--Defining a button-->
     <!--Creates 'Click this button' on the webpage and clicking on it will show an alert-->
     <!--<button type = "button" onclick = 'alert("Button clicked successfully")'> Click this button </button>-->
-    <button type = "button" onclick = show()> Click this button </button><br>
-    
+    <button type="button" onclick=show()> Click this button </button><br>
+
     <!--Defining an attribute key and value using img tag-->
-    <img title="Shikku" src = ./Images/PicsArt_07-12-03.16.50.jpg height="200px" id="image1" >
+    <img title="Shikku" src=./Images/PicsArt_07-12-03.16.50.jpg height="200px" id="image1">
 
     <!--HTML Headings-->
     <h1>This is h1 heading</h1>
@@ -69,7 +71,7 @@
         This is paragraph tag line 3
     </p>
     <p>This is a statement in another P tag</p>
-    
+
     <pre class="class1">This is a pre tag check 
         This is a pre tag check for line 2
         This is pre tag line 3
@@ -87,55 +89,74 @@
     </pre>
 
     <!--Anchor tag will scroll to this element-->
-    <p id='p4'><pre>This is the Anchor tag referred text</pre></p>
-    <a href ="C:\Users\DinHar\Downloads\20220712_162004.jpg" target="_blank">This is Chikku image 2</a>
+    <p id='p4'>
+    <pre>This is the Anchor tag referred text</pre>
+    </p>
+    <a href="C:\Users\DinHar\Downloads\20220712_162004.jpg" target="_blank">This is Chikku image 2</a>
     <br />
-    <a href ="secondWebPage.html" target="_blank">This is Chikku image 3</a>
+    <a href="secondWebPage.html" target="_blank">This is Chikku image 3</a>
     <br />
- 
+
     <!--We can make image as hyperlink, we did not mention target here = so by default it will take _self-->
     <a href="secondWebpage.html">
-        <img src="./Images/Scenery.jpg" height="200px" title = "Scenery">
+        <img src="./Images/Scenery.jpg" height="200px" title="Scenery">
     </a>
 
 
-<!--div and span tags-->
-<!--Inline Styling-->
-<div style="background-color:pink ; color:brown">
-    <h3>This is <span style="background-color:aqua;color:blue">DIV</span> tag content</h3>
-    <p>Div tag content is being demoed here</p>
-    <p>It acts as a frame to put similar content together</p>
+    <!--div and span tags-->
+    <!--Inline Styling-->
+    <div style="background-color:pink ; color:brown">
+        <h3>This is <span style="background-color:aqua;color:blue">DIV</span> tag content</h3>
+        <p>Div tag content is being demoed here</p>
+        <p>It acts as a frame to put similar content together</p>
     </div>
-    
+
     <!--HTML Lists-->
-    <h5><--Unordered list and List items ;  Styling included--></h5>
+    <h5>
+        <--Unordered list and List items ; Styling included-->
+    </h5>
     <ul style="list-style-type:circle ;">
-    <li>Shopping</li>
-    <li>Photoshoot</li>
-    <li>Eating</li>
+        <li>Shopping</li>
+        <li>Photoshoot</li>
+        <li>Eating</li>
     </ul>
-    
-    <h5><--Ordered list and List items ; Nested List and including hyperlink--></h5>
+
+    <h5>
+        <--Ordered list and List items ; Nested List and including hyperlink-->
+    </h5>
     <ol type="I">
-    <li>Eat</li>
-    <li>Sleep</li>
-    <li>Work</li>
+        <li>Eat</li>
+        <li>Sleep</li>
+        <li>Work</li>
         <ol>
             <li>office</li>
             <li>Tution</li>
-            <a href="https://www.google.com" target="_blank"><li>Search for other options</li></a>
+            <a href="https://www.google.com" target="_blank">
+                <li>Search for other options</li>
+            </a>
         </ol>
     </ol>
-    
-  
+
+    <!--External Scripting-->
+    <!--We generally prefer downloading the java script file to the end  - i.e. once all the HTML elements have loaded on to the webpage
+so that the page loading is not slowed down because of the script download-->
+    <script src="script1.js"> </script>
 </body>
+
 </html>
 
 
-<h5><--Description list ,Description term and Description definition--></h5>
-    <dl class="class1">
-    <dt>Eat <dd>-- eat well daily</dd></dt>
-    <dt>Sleep <dd>-- Sleep for 8 hours</dd></dt>
-    <dt>Work <dd>-- Work for 9 hours</dd></dt>
-    </dl>
-
+<h5>
+    <--Description list ,Description term and Description definition-->
+</h5>
+<dl class="class1">
+    <dt>Eat
+    <dd>-- eat well daily</dd>
+    </dt>
+    <dt>Sleep
+    <dd>-- Sleep for 8 hours</dd>
+    </dt>
+    <dt>Work
+    <dd>-- Work for 9 hours</dd>
+    </dt>
+</dl>

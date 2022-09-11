@@ -51,9 +51,6 @@ var z = "Hi i am var";
 
 if(score==2){
     let y = "Hi i am 2";
-}
-
-if(score==2){
     var z = "Hi i am not 3";
 }
 
