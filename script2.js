@@ -110,7 +110,7 @@ function name() {
 name();
 console.log(typeof (name))
 
-//Passing function as an arument into another function 
+//Passing function as an argument into another function 
 function printValue(val1, val2) {
     val1(3, 4);
     val2(3, 4);
@@ -167,7 +167,7 @@ const getTodo = function () {
 
 //This will thow error - as there is no callback implemented
 var ref = getTodo();
-console.log(ref.text); */
+console.log(ref.text); 
 
 //How to correct the above example 2 to print without error - applying callback feature
 //Here we are passing a JSOn object as argument to the call back
@@ -181,4 +181,114 @@ function print(data){
 }
 
 getTodo(print);
+
+We can either pass the function reference in getTodo or we can directly define the function itself as its argument 
+getTodo(function print(data){    --> we can remove the name 'print' also -> it is called anonymous function
+    console.log(data.text);
+});*/
+
+//--->ForEach in arrays<----
+//Let us first define an array
+let arr3 = [1, 2, 3, 4, 5];
+
+//It can take 3 parameters - value , index , array, we are giving one now
+/*function myFunction(value,index,array){
+    //So for each element in the array this function will get executed - i.e. it will print all the values, index places in the array
+    console.log(value);
+    console.log(index);
+    console.log(array);
+}
+
+//For each element in arr3 , i want myFunction to get executed - This will print the values as needed
+arr3.forEach(myFunction);*/
+
+//Map function
+/*function mapFunction(value){
+    return value * 3;
+}
+
+//What we are doing here -> we are performing arr3*3 for all its elements and storing these new values to another array arr3Ele
+let arr3Ele = arr3.map(mapFunction);
+//printing it
+for (let i = 0 ; i < arr3Ele.length ; i++){
+    console.log(arr3Ele[i])
+}
+
+//or i can print it simply like this also
+console.log(arr3Ele);
+
+//We can do method chaining also like this
+//arr3Ele.forEach(myFunction); //OR Just say
+arr3.map(mapFunction).forEach(myFunction);*/
+
+/*We can modify the above line 222 and show all the concepts in one place
+Method chaining + passing the function directly in the argument instead of it's reference + anonymous function */
+//So with just an array defined as pere-requisite, we can achieve all the above mentioned in single coding
+/*arr3.map(function(value){
+    return value*3;
+}).forEach(function(value,index,array){
+    console.log(value);
+    console.log(index);
+    console.log(array);
+})*/
+
+
+//Arrow functions
+
+//See the basic function example and see how will change it step by step
+/*const addNum = function(num1,num2){
+
+    return num1+num2;
+}
+console.log("The sum is :- "+ addNum(2,3));*/
+
+/*
+Now let us replace function keyword with =>
+remove the {} as there is only one line in the function
+remove 'return' keyword as arrow function by default returns value if there is single statement in the function
+*/
+/*const addNum1 = (num1,num2) =>  num1 + num2;
+console.log("The sum is :- " + addNum(3,4));
+
+//if there is only ONE parameter, then we can remvoe () also
+const prodNum = num => num*4;
+console.log ("The product is :- " + prodNum(4));*/
+
+
+//Closures
+/*function greeting() {
+
+    //Functions are also treated as variable - so we can call them / we can return them inside another function
+    function print() {
+
+        console.log("Hello how do you do");
+    }
+
+    print();
+}
+greeting();*/
+
+//Returning multiple functions at one go by referring to their objects
+function numGame(num1, num2) {
+    console.log("We are performing operations on :- "  + num1 + " " + num2)
+    return {
+        sumObj: function () {
+            console.log(num1 + num2)
+        }, proObj: function () {
+            console.log(num1 * num2)
+        }, divObj: function () {
+            console.log(num1 / num2)
+        }, subObj: function () {
+            console.log(num1 - num2)
+        }
+    }
+}
+
+/*The returned value needs a reference to be stored in - you cannot just call the function , we should 
+also reference it to a variable so that the return value is stored*/
+let result = numGame(10,5);
+result.sumObj();
+result.divObj();
+
+
 
