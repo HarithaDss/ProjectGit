@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootStrap Doc</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!--Fixed width Container-->
+    <div class="container" style="border:2px solid blue">
+        This is a Fixed Width Container
+        This is a Fixed Width Container
+        This is a Fixed Width Container
+        This is a Fixed Width Container
+        This is a Fixed Width Container
+    </div>
+
+    <!--Full width Container-->
+    <div class="container-fluid" style="border:2px solid blue">
+        This is a Full Width Container
+        This is a Full Width Container
+        This is a Full Width Container
+        This is a Full Width Container
+        This is a Full Width Container
+    </div>
+
+    <br><br>
+    
+    <!--Creating the grid spans layout-->
+    <div class="container" style="border:3px solid white">
+        <!--defining a layout row with 2 columns - each col having 6 grids-->
+        <div class="row">
+            <!--for medium viewport size , this layout applied to md, lg, xl and xxl BUT NOT to s and xs-->
+            <div class="col-md-4" style="border:3px solid red">Column leftside</div>
+            <div class="col-md-4 border">Column rightside</div>
+            <div class="col-md-4" style="border:3px solid red">Column leftside</div>
+
+            <!--giving class="col-6" can apply the layout from xs and there by to all other sizes which are all ahead of it-->
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6" style="border:3px solid red">
+                <p>This is paragraph col1</p>Column leftside
+            </div>
+            <div class="col-lg-4 col-md-4 border"> <img title="Shikku" src=./Images/PicsArt_07-12-03.16.50.jpg
+                    height="50px" id="image1"><br>
+                Column rightside</div>
+            <div class="col-lg-4 col-md-4" style="border:3px solid red"> <a href="secondWebPage.html"
+                    target="_blank">This is Chikku image 3</a>Column leftside</div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

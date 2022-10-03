@@ -42,24 +42,30 @@ const consumer = () => {
     console.log("Consumer function is getting called");
     //arow function used for then() and anonyous function used for 
     promise.then(result => document.getElementById("p1").innerHTML = result)
-        .catch(function(error){
+        .catch(function (error) {
             document.getElementById("p1").innerHTML = error;
         })
 }
 
-consumer();
+//Calling this method is way 1 - fetching data from server using xmlhttp
+//consumer();
 
-//The same code from 44 can also be written using Fetch
+//The same code from 44 can also be written using Fetch - way 2
 /*fetch(URL) returns a promise object reference 
  we pass the request's response into then and there by convert it  to JSON format - this will return another promise
  This is a much cleaner way of writing code compared to xmlHTTP written above
 */
+console.log("This is fetch Test")
 /*fetch(URL).then(response => response.json)
 .then(result => console.log(result));*/
 
 //Line 58 is supposed to print the complete array which has name and url details - but what if i just wanted to print only names or only URLs
-//(These two lines explained in my OneNOTE - class 8)
-fetch(URL).then(response => response.json)
-.then(result => console.log(result.results.map(r => r.name)));
+//(These two lines explained in my OneNOTE - class 8)   
+fetch(URL).then(response => response.json())
+.then(function(result){
+    console.log(result);
+}).then(result => console.log(result.results.map(r => r.name)));
+
 //Above we can see 2 ways of sending request to server and get response -> XMLHTTPRequest and Fetch api
 
+//Async Await - better and upgraded version of Promise

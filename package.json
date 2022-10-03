@@ -1,0 +1,25 @@
+{
+  "name": "visual-studio-cod",
+  "version": "1.0.0",
+  "description": "creating package.json using npm",
+  "main": "ajaxPromiseScript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarithaDss/ProjectGit.git"
+  },
+  "author": "Haritha Dss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HarithaDss/ProjectGit/issues"
+  },
+  "homepage": "https://github.com/HarithaDss/ProjectGit#readme",
+  "dependencies": {
+    "rxjs": "^7.5.7"
+  },
+  "devDependencies": {
+    "webpack": "^5.74.0"
+  }
+}
