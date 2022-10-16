@@ -13,6 +13,7 @@
 <body>
 
     <!--Navigation Bars-->
+    <!--Horizontal Nav bar-->
     <nav class="navbar navbar-expand-sm bg-dark mb-5 navbar-right">
         <div class="container-fluid">
             <!--Creating menu-->
@@ -27,6 +28,23 @@
             </ul>
         </div>
     </nav>
+
+    <!--Vertical Nav bar ('navbar-expand-sm' class should be removed - so that the bar will not expand horizontally)-->
+    <nav class="navbar bg-dark mb-5 navbar-right">
+        <div class="container-fluid">
+            <!--Creating menu-->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="secondWebPage.html" class="nav-brand"><img src="Images\PicsArt_07-12-03.16.50.jpg"
+                            style="width:40px"></a>
+                </li>
+                <li class="nav-item"><a class="nav-link">Home</a></li>
+                <li class="nav-item"><a class="nav-link">About Us</a></li>
+                <li class="nav-item"><a class="nav-link">Products</a></li>
+            </ul>
+        </div>
+    </nav>
+
 
     <!--Let us use the same navigation bar example as seen above- but this time we will create an icon which will expand to show the menu-->
     <!--Navigation Bars-->
@@ -225,8 +243,8 @@
         </div>
 
         <!-- Forms-->
-        <form class="mt-4">
-            <label>UserName : </label><input type="text" class="form-control mb-4" placeholder="Name" name="name">
+        <form class="mt-4 mb-10">
+            <label>UserName : </label><input type="text" class="form-control mb-4" placeholder="UserName" name="name">
             <label>Password : </label><input type="text" class="form-control mb-4" placeholder="Password" name="pwd">
         </form>
 
@@ -357,7 +375,16 @@
             </div>
         </div>
 
-
+        <!-- Forms-->
+        <form class="mt-4 mb-10 was-validated">
+            <label>UserName : </label><input type="text" class="form-control" required placeholder="UserName"
+                name="name">
+                <div class="invalid-feedback">Please enter UserName</div>
+            <label>Password : </label><input type="text" class="form-control" required minlength="6"
+                placeholder="Password" name="pwd">
+                <div class="invalid-feedback">Please enter Password</div>
+            <button type="button" onclick = "alert('Thanks for submitting a blog')" class="mt-5 btn btn-primary mb-5">Submit</button>
+        </form>
 
 
 
